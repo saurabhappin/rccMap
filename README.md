@@ -90,7 +90,7 @@ For iOS, don't forget to install pods:
 cd ios && pod install && cd ..
 
 ```
-##Example
+## Example
 ```sh
    import React, { useRef } from 'react';
    import MapViewClustering from './MapViewClustering';
