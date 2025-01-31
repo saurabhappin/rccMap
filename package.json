@@ -10,8 +10,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-navigation/native": "^7.0.14",
+    "ios": "^0.0.1",
     "react": "18.3.1",
-    "react-native": "0.76.1"
+    "react-native": "0.76.1",
+    "react-native-geolocation-service": "^5.3.1",
+    "react-native-get-random-values": "^1.11.0",
+    "react-native-google-places-autocomplete": "^2.5.7",
+    "react-native-map-clustering": "^3.4.2",
+    "react-native-maps": "^1.20.1",
+    "react-native-safe-area-context": "^5.1.0",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -24,9 +33,9 @@
     "@react-native/eslint-config": "0.76.1",
     "@react-native/metro-config": "0.76.1",
     "@react-native/typescript-config": "0.76.1",
+    "@types/jest": "^29.5.13",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
-    "babel-jest": "^29.6.3",
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
