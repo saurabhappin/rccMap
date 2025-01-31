@@ -118,7 +118,7 @@ cd ios && pod install && cd ..
 | Prop Name               | Type                                    | Required | Default Value | Description |
 |-------------------------|-----------------------------------------|----------|--------------|-------------|
 | `initialRegion`         | `CoordinatedType`                      | ❌        | `{ latitude: 37.78825, longitude: -122.4324 }` | Defines the initial region for the map. |
-| `mapRef`               | `MutableRefObject<MapView | undefined>` | ✅        | `undefined`  | Reference to the map instance for programmatic control. |
+| `mapRef`               | `MutableRefObject<MapView or undefined>` | ✅        | `undefined`  | Reference to the map instance for programmatic control. |
 | `coordinateDataArray`   | `Array<CoordinatedType>`               | ❌        | `[]`         | Array of coordinates to display as markers. |
 | `markerImage`          | `ImageURISource`                        | ❌        | `undefined`  | Custom image for the markers. |
 | `onMapReady`           | `Function`                              | ❌        | `undefined`  | Callback triggered when the map is ready. |
@@ -136,4 +136,4 @@ cd ios && pod install && cd ..
 | `onPressMap`          | `(coordinates: Object) => void`         | ❌        | `undefined`  | Callback for map press events. |
 | `isSearchEnabled`     | `boolean`                                | ❌        | `false`      | Enables Google Places Autocomplete search. |
 | `countryLatLng`       | `string`                                | ❌        | `undefined`  | Comma-separated latitude and longitude for a country. |
-| `onPressSearchedLoc`  | `(coordinates: GooglePlaceData, location: GooglePlaceDetail | null) => void` | ❌ | `() => {}` | Callback triggered when a search result is selected. |
+| `onPressSearchedLoc`  | `(coordinates: GooglePlaceData, location: GooglePlaceDetail or null) => void` | ❌ | `() => {}` | Callback triggered when a search result is selected. |
