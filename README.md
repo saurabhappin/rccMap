@@ -81,11 +81,13 @@ Ensure you have the required dependencies installed:
 ```sh
 npm install react-native-maps react-native-map-clustering react-native-google-places-autocomplete
 
-OR
+OR 
 
 yarn add react-native-maps react-native-map-clustering react-native-google-places-autocomplete
 
+```
 For iOS, don't forget to install pods:
+```
 
 cd ios && pod install && cd ..
 
