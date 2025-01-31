@@ -29,7 +29,7 @@ type MapViewClusteringProps = {
     countryLatLng?: string;
     onPressSearchedLoc?: (coordinates: GooglePlaceData, location: GooglePlaceDetail | null) => void;
 };
-
+export const mapApiKey = 'AIzaSyDVkjN_Q4Y0JZu5BnY1OYUh6MFsE6PXiLA';
 const MapViewClustering = React.memo((props: MapViewClusteringProps) => {
     const {
         initialRegion,
@@ -53,7 +53,6 @@ const MapViewClustering = React.memo((props: MapViewClusteringProps) => {
         isSearchEnabled = false,
         onPressSearchedLoc = () => {},
     } = props;
-
     const [mapCoordinates, setMapCoordinates] = useState<Array<CoordinatedType>>(coordinateDataArray ?? []);
     const [isMapReady, setIsMapReady] = useState<Boolean>(false);
     const [INITIAL_REGION, setINITIAL_REGION] = useState<CoordinatedType>({
@@ -140,7 +139,7 @@ const MapViewClustering = React.memo((props: MapViewClusteringProps) => {
                         description: styles.description,
                     }}
                     query={{
-                        key: 'AIzaSyDVkjN_Q4Y0JZu5BnY1OYUh6MFsE6PXiLA', // Replace with your actual API key
+                        key: mapApiKey, // Replace with your actual API key
                         language: 'en',
                     }}
                     nearbyPlacesAPI={'GooglePlacesSearch'}

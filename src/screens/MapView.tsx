@@ -1,12 +1,12 @@
 import React, { useCallback, useRef, useState } from 'react';
 import { View, StyleSheet, Platform, Image, Dimensions } from 'react-native';
-import MapViewClustering from '../components/MapViewClustering'; // Adjust the path to your file
 import { CoordinatedType, DeliveryRunSheet, NormalObjectTyep } from '../modals';
 import { Marker, Polyline } from 'react-native-maps';
 import { screenHeight, vh, vw } from '../utils/Dimensions';
 import fonts from '../utils/fonts';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import MapView from 'react-native-map-clustering';
+import MapViewClustering, { mapApiKey } from '../components/MapViewClustering';
 
 const DemoScreen = () => {
   const [text, setText] = React.useState('');
@@ -182,7 +182,7 @@ const DemoScreen = () => {
           }}
           renderLeftButton={() => <Image source={require('../assets/search.png')} style={styles.searchIcon} />}
           query={{
-            key: 'AIzaSyDVkjN_Q4Y0JZu5BnY1OYUh6MFsE6PXiLA',
+            key: mapApiKey,
             language: 'en',
           }}
           nearbyPlacesAPI={'GooglePlacesSearch'}
