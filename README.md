@@ -137,5 +137,3 @@ cd ios && pod install && cd ..
 | `isSearchEnabled`     | `boolean`                                | ❌        | `false`      | Enables Google Places Autocomplete search. |
 | `countryLatLng`       | `string`                                | ❌        | `undefined`  | Comma-separated latitude and longitude for a country. |
 | `onPressSearchedLoc`  | `(coordinates: GooglePlaceData, location: GooglePlaceDetail | null) => void` | ❌ | `() => {}` | Callback triggered when a search result is selected. |
-
-```sh
