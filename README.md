@@ -90,11 +90,13 @@ For iOS, don't forget to install pods:
 cd ios && pod install && cd ..
 
 ```
+##Example
+```sh
    import React, { useRef } from 'react';
    import MapViewClustering from './MapViewClustering';
 
    const App = () => {
-      const mapRef = useRef(null);
+      const mapRef = usRef(null);
 
       return (
          <MapViewClustering 
@@ -110,8 +112,6 @@ cd ios && pod install && cd ..
    };
 
    export default App;
-```tsx
-
 ```
 ## Props
 
